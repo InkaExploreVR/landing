@@ -47,3 +47,4 @@ La falta de herramientas educativas efectivas y envolventes limita la capacidad 
 - Herramienta educativa que enriquece el aprendizaje y mejora la retención estudiantil.
 - Métricas de desempeño para decisiones informadas y optimización de programas educativos.
 - Una experiencia de realidad virtual inmersiva y envolvente para sumergirse en la historia y la cultura del Perú.
+- Educacion de calidad sin salir del aula.
