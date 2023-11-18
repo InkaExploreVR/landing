@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/acceso.css">
+    <title>Inicio de Sesión</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container" id="container">
+       
+        <div class="form-container sign-up">
+            <form>
+                <img src="img/logoinca.svg" alt="" class="logo_img">
+
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Registrarse</button>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-apple"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <img src="img/logoinca.svg" alt="" class="logo_img">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button>Iniciar Sesión</button>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-apple"></i></a>
+                </div>
+
+
+                
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenido de nuevo!</h1>
+                    <p>Ingrese sus datos personales para acceder a todas las funciones del sitio</p>
+                    <button class="hidden" id="login">Iniciar Sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bienvenido!!</h1>
+                    <p>Ingrese sus datos personales para acceder a todas las funciones del sitio</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/animacion.js"></script>
+</body>
+
+</html>
