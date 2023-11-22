@@ -5,7 +5,7 @@ const header = document.querySelector('.header');
 //Menu Toggle navegation
 menuBurguer.addEventListener('click', () => {
   menuBurguer.classList.toggle('fa-times');
-  menuDropdown.classList.toggle('disable');
+  menuDropdown.classList.toggle('menu-disabled');
 });
 
 document.querySelectorAll('.menu__item').forEach((link) => {
@@ -13,14 +13,18 @@ document.querySelectorAll('.menu__item').forEach((link) => {
     e.preventDefault();
     const url = link.getAttribute('href');
     const isInternalUrl = url[0] === '#';
-    console.log(isInternalUrl);
     if (isInternalUrl) {
       const linkSection = url.slice(1);
       const section = document.getElementById(linkSection);
-      //console.log(section.getBoundingClientRect().y);
-      section.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      window.scroll({
+        top:
+          section.getBoundingClientRect().top +
+          window.scrollY -
+          header.getBoundingClientRect().height,
+        behavior: 'smooth',
+      });
       menuBurguer.classList.toggle('fa-times');
-      menuDropdown.classList.toggle('disable');
+      menuDropdown.classList.toggle('menu-disabled');
     } else window.location.href = url;
   });
 });

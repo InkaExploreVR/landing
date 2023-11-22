@@ -85,12 +85,27 @@ body::-webkit-scrollbar-track:active {
   width: 100%;
   margin: 0;
   border-top: 2px solid;
+  position: fixed;
+  top: 92px;
+  left: 0px;
+  height: calc(100vh - 92px);
+  background: var(--color-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.menu__dropdown.menu-disabled {
+  transform: translateX(100%);
 }
 
 .menu__list {
   padding: 0.5rem 0;
   margin: 0;
   text-align: center;
+  width: 100%;
   transition: all 0.5s ease-in;
 }
 
@@ -104,13 +119,24 @@ body::-webkit-scrollbar-track:active {
   display: block;
   margin: 0rem 0.5rem;
   padding: 0.5rem;
-  border-radius: 10px;
 }
 
 .menu__item:hover {
-  color: var(--color-main);
-  background: var(--color-text);
+  border-bottom: 0.25rem solid var(--color-secondary);
   cursor: pointer;
+}
+
+.menu__item.menu__button {
+  border-bottom: none;
+  color: var(--color-main);
+  border-radius: 10px;
+  background: var(--color-text);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.menu__item.menu__button:hover {
+  background: var(--color-third);
 }
 
 /* ******* Menu Icons ******* */
@@ -281,14 +307,24 @@ body::-webkit-scrollbar-track:active {
 
 /* ******* Responsive design ******* */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* ******* Nav Bar ******* */
   .menu__dropdown {
     display: flex;
+    flex-direction: row;
+    position: initial;
+    height: auto;
+    background: transparent;
     gap: 1rem;
     width: auto;
     padding: 0;
     border-top: 0px;
+  }
+  .menu__dropdown.menu-disabled {
+    transform: translateX(0px);
+  }
+  .menu__list {
+    width: auto;
   }
   #menuBurguer {
     display: none;
