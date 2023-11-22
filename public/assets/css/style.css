@@ -3,10 +3,11 @@
 :root {
   --color-main: #f8f8f8;
   --color-secondary: rgb(0, 41, 60);
+  --color-third: rgb(27, 82, 107);
   --color-text: #222831;
   --color-text-opacity: rgba(33, 39, 48, 0.8);
   --color-header-gradient: rgba(248, 248, 248, 0.8);
-  --font-main: 'Roboto', sans-serif;
+  --font-main: 'Roboto', 'Montserrat', sans-serif;
 }
 
 * {
