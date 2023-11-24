@@ -10,7 +10,7 @@
   - Desarrolladora web especializada en frontend con experiencia en contabilidad y finanzas. Comprometida con el desarrollo de una sociedad inclusiva.
 
 - **Rayt Rufino Chavez Ysla** - Ing. de Software - U201719230
-  - Estudiante de ingeniería de software con conocimientos en C++ y Python. Apasionado por los deportes de contacto y la resiliencia.
+  - Estudiante de ingeniería de Software con conocimientos en C++ y Python. Apasionado por los deportes de contacto y la resiliencia.
 
 - **Daniel Stalin Palomino Murga** - Ing. de Software - U20201B253
   - Estudiante de Ingeniería de Software enfocado en detalles, perseverante, y experto en programación en C++.

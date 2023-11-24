@@ -63,7 +63,7 @@ body::-webkit-scrollbar-track:active {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: var(--color-header-gradient);
+  background: var(--color-main);
 }
 
 .nav {
@@ -158,6 +158,8 @@ body::-webkit-scrollbar-track:active {
 
 .container:not(#home) {
   padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* ******* Home Section ******* */
@@ -172,6 +174,18 @@ body::-webkit-scrollbar-track:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--color-main);
+  background: linear-gradient(
+      91.7deg,
+      rgba(0, 0, 0, 0.5) -4.3%,
+      rgba(0, 0, 0, 0.75) 101.8%
+    ),
+    url(../img/background.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 2rem;
 }
 
 .title {
