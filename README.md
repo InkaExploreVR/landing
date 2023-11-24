@@ -22,7 +22,7 @@
   - Estudiante de Ingeniería de Sistemas con habilidades en C++, Python, y HTML. Responsable, puntual y organizado.
 
 - **Oskar Rodrigo Sosa Soto** - Ing. de Software - U202212214
-  - Estudiante de Ingeniería de Software apasionado por el desarrollo y la exploración de nuevas tecnologías.
+  - Estudiante de Ingeniería de Software apasionado por el desarrollo , la exploración de nuevas tecnologías,con habilidades en C++ y Python.
 
 
 ## Problema
